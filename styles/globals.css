@@ -134,7 +134,7 @@ header {
         font: size 1.2rem;
     }
 
-    .menu-button{
+    .menu-button {
         display: block;
     }
 
@@ -152,7 +152,7 @@ header {
         display: none;
     }
 
-    .show-menu nav{
+    .show-menu nav {
         display: block;
     }
 
@@ -169,6 +169,10 @@ header {
 
 /*Main Content*/
 
+main {
+    background-color: #ebebeb;
+}
+
 .gray-bg {
     background-color: #2c2c2c;
 }
@@ -176,15 +180,93 @@ header {
 .page-inner-content {
     max-width: 1280px;
     margin: 0 auto;
+    padding: 50px;
 }
 
-.cols{
+.cols {
     display: grid;
     justify-content: space-evenly;
-    padding-top:4rem 1rem;
+    padding-top: 4rem 1rem;
 }
 
-.cols-3{
+.cols-3 {
     grid-template-columns: repeat(3, 1fr);
     gap: 3rem;
+
+}
+
+.cols-3 img {
+    max-width: 100%;
+    align-items: center;
+
+}
+
+.cols-4 img {
+    max-width: 50%;
+}
+
+.cols-4 {
+    display: grid;
+    /**/
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.cols>div {
+    cursor: pointer;
+    transition: all 0.1s;
+    /* Adicionada a unidade de tempo "s" para segundos */
+}
+
+.cols>*:hover {
+    /* Corrigido "houver" para "hover" */
+    transform: translateY(-35px);
+    /* Ajustado o valor para uma translação mais realista */
+}
+
+.section-title {
+    text-align: center;
+    margin-top: 4rem;
+    font-size: 1.8rem;
+}
+
+.subtitle-underline {
+    width: 100px;
+    height: 5px;
+    background-color: #0084ff;
+    border-radius: 9999px;
+    margin: 8px auto 0 auto;
+}
+
+.product {
+    color: #2c2c2c2c;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-name {
+    font-weight: 600;
+    margin-top: 0.4rem;
+    color: #2c2c2c;
+}
+
+.rate {
+    color: #0084ff;
+    font-size: 1.3rem;
+}
+
+.product-price span {
+    font-weight: 600;
+    color: #2c2c2c;
+}
+
+.xclusive-container{
+    color:white;
+    flex-direction: row-reverse;
+    padding: 5rem 1rem;
+}
+
+.exclusive-container img{
+    max-width: 500px;
 }
