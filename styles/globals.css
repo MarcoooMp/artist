@@ -14,6 +14,8 @@ body {
     max-width: 1300px;
     margin-left: auto;
     margin-right: auto;
+    cursor: pointer;
+    padding: 15px;
 }
 
 .navbar {
@@ -71,19 +73,25 @@ nav ul li:hover {
 
 header {
     background-image: radial-gradient(#fff, #c7c7c7);
+    
 }
 
 
 .header-bottom-side {
-    display: flex;
+    display: inline;
     align-items: center;
     justify-content: center;
+    text-align: center;
     padding: 1rem;
+ 
 }
 
 .header-bottom-side-left {
     height: 100%;
     flex-basis: 50%;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 15px;
 }
 
 .header-bottom-side-left h2 {
@@ -94,6 +102,7 @@ header {
 .header-bottom-side-left p {
     line-height: 1.5rem;
     margin-bottom: 1.5rem;
+    
 }
 
 .header-bottom-side-left button {
@@ -181,6 +190,7 @@ main {
     max-width: 1280px;
     margin: 0 auto;
     padding: 50px;
+    cursor: pointer;
 }
 
 .cols {
@@ -307,32 +317,39 @@ main {
 
 .comentarios{
     display: flex;
-    padding: 4rem 1rem;
-    justify-content: space-evenly;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 6rem;  /* Espaçamento entre blocos */
+  
 }
 
 /*coment é testimonail*/
 
-.coment{
+.coment {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    flex-basis: 30%;
+    align-items: center;
     text-align: center;
     box-shadow: 0 0 15px #afafaf;
-    padding: 1rem;
-    border-radius: 1rem;
+    padding: 4rem;
+    border-radius: 3rem;
     cursor: pointer;
-    transition: all 0.2s;
+    width: 500px;  /* Largura fixa */
+    height: 500px; /* Altura fixa */
 }
+
+
 
 .coment:houver{
     transform: translateY(-5px);
 }
 
 .coment p{
-    margin: 5px 0;
+    width: 100%;       /* O texto ocupará toda a largura do contêiner */
+    word-wrap: break-word;  /* Quebra as palavras quando necessário */
+    text-align: center
 }
 
 .coment p:first-child{
@@ -341,6 +358,7 @@ main {
     color:#0084ff;
     margin-top: 3rem;
     line-height: 2rem;
+    align-items: center;
 }
 
 .coment p:last-child{
@@ -404,9 +422,6 @@ main {
 
 }
 
-
-
-
 .links-footer ul li{
     margin-bottom: 0.5rem;
     cursor:pointer;
@@ -438,7 +453,7 @@ main {
     .copyright{
         font-size: 0.8rem;
     }
-    
+
 
 }
 
